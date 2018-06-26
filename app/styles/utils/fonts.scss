@@ -1,0 +1,25 @@
+$pathMontserrat: '/assets/fonts/';
+
+@font-face {
+	font-family: 'GothamLight';
+	src: url($pathMontserrat + 'Gotham-Light.eot');
+	src: url($pathMontserrat + 'Gotham-Light.eot?#iefix') format('embedded-opentype'),
+		 url($pathMontserrat + 'Gotham-Light.woff2') format('woff2'),
+		 url($pathMontserrat + 'Gotham-Light.woff') format('woff'),
+		 url($pathMontserrat + 'Gotham-Light.ttf') format('truetype'),
+		 url($pathMontserrat + 'Gotham-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamThin';
+	src: url($pathMontserrat + 'Gotham-Thin.eot');
+	src: url($pathMontserrat + 'Gotham-Thin.eot?#iefix') format('embedded-opentype'),
+		 url($pathMontserrat + 'Gotham-Thin.woff2') format('woff2'),
+		 url($pathMontserrat + 'Gotham-Thin.woff') format('woff'),
+		 url($pathMontserrat + 'Gotham-Thin.ttf') format('truetype'),
+		 url($pathMontserrat + 'Gotham-Thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

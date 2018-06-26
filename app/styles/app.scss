@@ -1,12 +1,18 @@
 @import "utils/colors";
+@import "utils/fonts";
 @import "header/header";
 @import "header/nav-bar";
 @import "header/header-legend";
 @import "content/mens-wear";
 @import "content/tunnel";
 @import "content/phone-img";
+@import "footer";
 
 * {
 	box-sizing: border-box;
 	outline: none;
+}
+
+body {
+	font-family: 'GothamLight', sans-serif !important;
 }

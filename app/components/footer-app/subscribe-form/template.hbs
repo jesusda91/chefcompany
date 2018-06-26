@@ -1,0 +1,35 @@
+<form {{action "onSubscribe" on="submit"}}>
+	<div class="row">
+		<div class="col-6">
+			{{input type="text" placeholder="NOMBRE" value=name required="true"}}
+		</div>
+		<div class="col-6">
+			{{input type="email" placeholder="CORREO ELECTRÓNICO" value=email required="true"}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6">
+			{{input type="text" placeholder="TIPO DE DOCUMENTO" value=documentType required="true"}}
+		</div>
+		<div class="col-6">
+			{{input type="text" placeholder="NÚMERO DE DOCUMENTO" value=document required="true"}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6">
+			{{input type="text" placeholder="TELEFONO" value=phone required="true"}}
+		</div>
+		<div class="col-6">
+			<div class="row ml-0 align-items-center accept-terms">
+				{{input type="checkbox" class="checkbox" checked=allRights required="true"}}
+				<span class="accept">
+					Acepto términos y condiciones
+				</span>
+				<button type="submit" class="btn suscribe-btn">
+					SUSCRIBIRME
+				</button>
+			</div>
+		</div>
+	</div>
+</form>
+{{yield}}
