@@ -1,0 +1,50 @@
+.mens-wear-content {
+	.images-ctn {
+		position: relative;
+		top: -10em;
+		.o-hidden {
+			overflow: hidden;
+			height: 100%;
+		}
+		.bike-img, .pants-img {
+			background-repeat: no-repeat;
+			height: 800px;
+			background-color: black;
+		}
+		.pants-img {
+			background-position: right;
+			background-image: url('/assets/images/Capa27.png');
+			height: 500px;
+			position: relative;
+			top: 5em;
+		}
+		.bike-img {
+			background-position: center;
+			background-image: url('/assets/images/Capa24.png');
+		}
+		.mannequin-img {
+			position: absolute;
+			top: 10em;
+			left: calc(50% - 118px);
+		}
+		.mens-wear-img {
+			position: absolute;
+			left: 0;
+			top: calc(50% - 182px);
+			width: 100%;
+		}
+	}
+
+	.decoration-ctn {
+		.square {
+			width: 20px;
+			height: 20px;
+			background-color: black;
+		}
+		.line {
+			height: 20px;
+			width: 6px;
+			background-color: black;
+		}
+	}
+}

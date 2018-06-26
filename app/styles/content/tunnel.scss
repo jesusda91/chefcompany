@@ -1,39 +1,8 @@
-.images-ctn {
-	.o-hidden {
-		overflow: hidden;
-		height: 100%;
-	}
-	.bike-img, .pants-img {
-		background-position: center;
-		background-repeat: no-repeat;
-		height: 800px;
-		background-color: black;
-	}
-	.pants-img {
-		background-image: url('/assets/images/Capa27.png');
-		height: 500px;
-	}
-	.bike-img {
-		background-image: url('/assets/images/Capa24.png');
-	}
-	.mannequin-img {
-		position: absolute;
-		top: 0;
-		left: calc(50% - 118px);
-	}
-	.mens-wear-img {
-		position: absolute;
-		left: 0;
-		top: calc(50% - 182px);
-		width: 100%;
-	}
-}
-
 .tunnel-section {
 	background-color: black !important;
 	color: white;
 	.container {
-		padding: 112px;
+		padding: 76px;
 		position: relative;
 		&:after {
 			content: " ";
@@ -61,7 +30,8 @@
 			z-index: 3;
 		}
 		p {
-			z-index: 12;
+			z-index: 3;
+			margin-bottom: 0;
 		}
 	}
 }
