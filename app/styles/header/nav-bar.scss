@@ -1,21 +1,21 @@
 .navbar {
 	.navbar-brand {
-		border-bottom: 3px solid #DAB378;
+		border-bottom: 3px solid $orange-logo;
 		padding: 1rem;
 		img {
 			height: 28px;
 		}
 	}
 	.nav-item {
-		border-bottom: 1px solid #232323;
+		border-bottom: 1px solid $border-dark;
 		padding: 0.7rem;
 		.nav-link {
 			color: white;
 		}
 		&:hover {
-			border-color: #886D49;
+			border-color: $orange-hover;
 			.nav-link {
-				color: #886D49;
+				color: $orange-hover;
 			}
 		}
 	}
