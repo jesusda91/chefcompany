@@ -1,0 +1,22 @@
+.navbar {
+	.navbar-brand {
+		border-bottom: 3px solid #DAB378;
+		padding: 1rem;
+		img {
+			height: 28px;
+		}
+	}
+	.nav-item {
+		border-bottom: 1px solid #232323;
+		padding: 0.7rem;
+		.nav-link {
+			color: white;
+		}
+		&:hover {
+			border-color: #886D49;
+			.nav-link {
+				color: #886D49;
+			}
+		}
+	}
+}
