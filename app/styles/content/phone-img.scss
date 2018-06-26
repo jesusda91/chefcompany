@@ -1,15 +1,24 @@
 .phone-img-section {
 	position: relative;
-	top: -18em;
+	top: -22em;
 	margin-bottom: -12em;
 	z-index: 4;
 	.ctn-txt {
-		margin-top: 21em;
+		margin-top: 26em;
 		h3 {
 			margin-bottom: 2rem;
 			span {
 				margin-left: 1.5em;
 			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.phone-img-section {
+		top: -18em;
+		.ctn-txt {
+			margin-top: 21em;
 		}
 	}
 }
