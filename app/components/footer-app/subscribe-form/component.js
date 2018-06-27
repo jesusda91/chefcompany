@@ -3,6 +3,8 @@ import Component from '@ember/component';
 import { match } from '@ember/object/computed';
 export default Component.extend({
 
+	classNames: ["row"],
+
 	documentTypes: Object.freeze(["CEDULA DE CIUDADANIA", "PASAPORTE", "CEDULA EXTRANJERA", "NIT", "TARJETA DE IDENTIDAD"]),
 
 	isEmailValid: match('email', /^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/),

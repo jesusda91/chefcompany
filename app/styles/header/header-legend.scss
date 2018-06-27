@@ -5,7 +5,8 @@
 	.brand-img {
 		border-left: 1px solid $border-dark;
 		border-bottom: 2px dashed $border-dark;
-	}
-	.lorem-txt {
+		img {
+			max-width: 100%;
+		}
 	}
 }

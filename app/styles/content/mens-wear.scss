@@ -1,14 +1,13 @@
 .mens-wear-content {
 	.images-ctn {
 		position: relative;
-		top: -10em;
+		top: 0;
 		.o-hidden {
 			overflow: hidden;
 			height: 100%;
 		}
 		.bike-img, .pants-img {
 			background-repeat: no-repeat;
-			height: 800px;
 			background-color: black;
 		}
 		.pants-img {
@@ -19,13 +18,15 @@
 			top: 5em;
 		}
 		.bike-img {
-			background-position: center;
+			height: 600px;
+			background-position: center -2em;
 			background-image: url('/assets/images/Capa24.png');
 		}
 		.mannequin-img {
 			position: absolute;
-			top: 10em;
-			left: calc(50% - 118px);
+			top: 2em;
+			left: calc(50% - 88px);
+			height: 600px;
 		}
 		.mens-wear-img {
 			position: absolute;
@@ -36,6 +37,11 @@
 	}
 
 	.decoration-ctn {
+		.lorem-txt {
+			span {
+				margin-left: 2rem;
+			}
+		}
 		.square {
 			width: 20px;
 			height: 20px;
@@ -45,6 +51,33 @@
 			height: 20px;
 			width: 6px;
 			background-color: black;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.mens-wear-content {
+		.images-ctn {
+			max-width: 100%;
+			.mens-wear-img {
+				position: absolute;
+				padding: 0 1em;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.mens-wear-content {
+		.images-ctn {
+			top: -10em;
+			.bike-img {
+				height: 800px;
+			}
+			.mannequin-img {
+				top: 10em;
+				height: auto;
+			}
 		}
 	}
 }

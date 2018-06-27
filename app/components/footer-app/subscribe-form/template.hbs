@@ -1,44 +1,47 @@
-<form {{action "onSubscribe" on="submit"}}>
-	<div class="row">
-		<div class="col-6">
-			{{input type="text" placeholder="NOMBRE" value=name required="true"}}
-		</div>
-		<div class="col-6">
-			{{input type="email" placeholder="CORREO ELECTRÓNICO" value=email required="true"}}
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-6">
-			{{#power-select
-				options=documentTypes
-				selected=documentType
-				searchEnabled=false
-				placeholder="TIPO DE DOCUMENTO"
-				onchange=(action (mut documentType))
-				as |documentType|
-			}}
-				{{documentType}}
-			{{/power-select}}
-		</div>
-		<div class="col-6">
-			{{input type="text" placeholder="NÚMERO DE DOCUMENTO" value=document required="true"}}
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-6">
-			{{input type="text" placeholder="TELEFONO" value=phone required="true"}}
-		</div>
-		<div class="col-6">
-			<div class="row ml-0 align-items-center accept-terms">
-				{{input type="checkbox" id="termsCheck" class="checkbox" checked=allRights required="true"}}
-				<label class="accept" for="termsCheck">
-					Acepto términos y condiciones
-				</label>
-				<button type="submit" class="btn suscribe-btn">
-					SUSCRIBIRME
-				</button>
+<div class="col-12 px-0">
+	<form {{action "onSubscribe" on="submit"}}>
+		<div class="row">
+			<div class="col-12 col-lg-6 py-1">
+				{{input type="text" placeholder="NOMBRE" value=name required="true"}}
+			</div>
+			<div class="col-12 col-lg-6 py-1">
+				{{input type="email" placeholder="CORREO ELECTRÓNICO" value=email required="true"}}
 			</div>
 		</div>
-	</div>
-</form>
+		<div class="row">
+			<div class="col-12 col-lg-6 py-1">
+				{{#power-select
+					options=documentTypes
+					selected=documentType
+					searchEnabled=false
+					placeholder="TIPO DE DOCUMENTO"
+					onchange=(action (mut documentType))
+					as |documentType|
+				}}
+					{{documentType}}
+				{{/power-select}}
+			</div>
+			<div class="col-12 col-lg-6 py-1">
+				{{input type="text" placeholder="NÚMERO DE DOCUMENTO" value=document required="true"}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-lg-6 py-1">
+				{{input type="text" placeholder="TELEFONO" value=phone required="true"}}
+			</div>
+			<div class="col-12 col-lg-6 py-1">
+				<div class="row flex-nowrap align-items-center justify-content-center ml-0 accept-terms">
+					{{input type="checkbox" id="termsCheck" class="checkbox" checked=allRights required="true"}}
+					<label class="accept" for="termsCheck">
+						Acepto términos y condiciones
+					</label>
+					<button type="submit" class="btn suscribe-btn ml-lg-auto my-3 my-md-0">
+						SUSCRIBIRME
+					</button>
+				</div>
+			</div>
+		</div>
+	</form>
+
+</div>
 {{yield}}
